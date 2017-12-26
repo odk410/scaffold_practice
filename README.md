@@ -1,10 +1,10 @@
-#Post 게시판 만들기
+# Post 게시판 만들기
 ---
-#Rails Scaffold 바닥부터 만들기
+# Rails Scaffold 바닥부터 만들기
 ---
-#1. Non Scaffold way
+# 1. Non Scaffold way
 ---
-##0. route.rb
+## 0. route.rb
 - /posts/index => index
 - /posts/new => new
 - /posts/create => create
@@ -13,7 +13,7 @@
 - /posts/update/:id => update
 - /posts/destroy/:id => destroy
 
-##1. Controller
+## 1. Controller
 - index : 모든 포스트를 보여준다. (제목만 보여주고, 링크를 통해 들어가면 show page로 간다.)
 - new : 새로운 글을 입력 받는다 (-> create)
 - create : 새로운 글을 DB에 저장한다.
@@ -22,13 +22,13 @@
 - update : 글을 수정하여 DB에 반영한다.
 - destroy : 글을 지운다.
 
-##2. Post Model
+## 2. Post Model
 - title : string
 - content : text
 
-#2. Scaffold 처럼 만들기
+# 2. Scaffold 처럼 만들기
 ---
-##1. routes
+## 1. routes
 ```ruby
 # CREATE (POST /posts -> 포스트를 만드는거)
 get '/posts/new' => 'posts#new'
@@ -49,9 +49,9 @@ put '/posts/:id' => 'posts#update'
 delete '/posts/:id' => 'posts#destroy'
 ```
 
-##2. view helper 사용하기
-##3. form helper 사용하기
+## 2. view helper 사용하기
+## 3. form helper 사용하기
 ---
 
-#3. 실습 : 퍼펙트 루비 온 레일즈
+# 3. 실습 : 퍼펙트 루비 온 레일즈
 - 퍼펙트 루비온 레일즈 scaffold 내용 따라하기
