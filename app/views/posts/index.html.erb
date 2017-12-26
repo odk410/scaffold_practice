@@ -1,0 +1,12 @@
+<h1>게시판</h1>
+
+<%= form_tag do %>
+  <% @post.each do |post|%>
+  <div>
+      <%= link_to "#{post.title}", post%>
+  <div>
+      <!-- <a href="#"> <%= post.title%> </a> <br> -->
+      <!-- <a href="/posts/edit/<%=post.id%>">[수정]</a> -->
+      <!-- <a href="/posts/destroy/<%=post.id%>">[삭제]</a> -->
+  <%end%>
+<% end %>

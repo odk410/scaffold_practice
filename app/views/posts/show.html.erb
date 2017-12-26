@@ -1,0 +1,7 @@
+<h1><%=@post.id%>번째 글</h1>
+<p>제 목 : <%=@post.title%></p><br>
+<p>제 목 : <%=@post.content%></p><br>
+
+<%= link_to "[수정]", "/posts/#{@post.id}/edit"%>
+<%= link_to "[삭제]", "/posts/#{@post.id}", method: "delete"%>
+<!-- <%= link_to "[삭제]", "/posts/#{@post.id}", method: :delete%> -->

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ScaffoldPractice</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<a href="/">홈으로</a>
+<a href="/posts/new">글 쓰기</a>
+<p><%= flash[:alert]%></p>
+<%= yield %>
+
+</body>
+</html>

@@ -1,0 +1,13 @@
+<h1>글 쓰기</h1>
+<!--
+<form action="/posts/create">
+  제 목 : <input type="text" name="title"><br>
+  내 용 : <input type="text" name="content"><br>
+  <input type="submit">
+</form> -->
+
+<%= form_tag("/posts", method: "post") do %>
+제 목 : <%= text_field_tag("post[title]") %><br>
+내 용 : <%= text_area_tag("post[content]") %><br>
+<%= submit_tag("글쓰기") %>
+<% end %>
